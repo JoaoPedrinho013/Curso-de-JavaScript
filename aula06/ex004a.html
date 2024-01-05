@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 30pt Arial;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <script>
+        var salario = Number(window.prompt('Qual seu salario?'))
+        
+        document.write(`Seu salario é ${salario.toFixed(2)}</br>`)
+        document.write(`Seu salario em real é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</br>`)
+        document.write(`Seu salario em dolar é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}</br>`)
+        document.write(`Seu salario em euro é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}`)
+        document.write(`Seu salario em libra é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'GBP'})}</br>`)
+        document.write(`Seu salario em iene é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'JPY'})}</br>`)
+        document.write(`Seu salario em dolar canadense é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'CAD'})}</br>`)
+        document.write(`Seu salario em dolar australiano é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'AUD'})}</br>`)
+        document.write(`Seu salario em franco suíço é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'CHF'})}</br>`)
+        document.write(`Seu salario em yuan é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'CNY'})}</br>`)
+        document.write(`Seu salario em rúpia é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'INR'})}</br>`)
+        document.write(`Seu salario em peso mexicano é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'MXN'})}</br>`)
+        document.write(`Seu salario em rand sul-africano é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'ZAR'})}</br>`)
+        document.write(`Seu salario em rublo russo é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'RUB'})}</br>`)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first program...</title> 
+    <style>
+    body {
+        background-color: lightblue;
+        color: black;
+        font: normal 20pt Arial;    
+    }
+    h1 {
+        color: gray;
+    }
+    </style>    
+</head>
+<body>
+    <h1>Olá mundo!</h1> 
+    <p>Já me livrei da maldição!</p>
+    
+    <script>
+        /*var n1 = Number.parseInt(window.prompt('Digite um numero: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro numero: '))
+        var soma = n1 + n2
+        esse é um jeito antigo do javascript de converter string em numeros, a debaixo ja se acha se for int ou float
+        window.alert('A soma dos valores é ' + soma)*/
+        
+
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var soma = n1 + n2
+        
+        //window.alert('A soma dos valores é ' + soma.toString()) // eu converti para string so para salvar o comando
+        window.alert(`A soma de ${n1} + ${n2} = ${soma}`) // isso é igual o format do python mas tem que usar a crase `` chama-se template
+        
+    </script>
+</body>
+</html>

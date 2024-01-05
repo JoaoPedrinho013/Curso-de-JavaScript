@@ -1,0 +1,54 @@
+body {
+    background: black;
+    font: normal 15pt Times;
+    color: white;
+}
+
+header {
+    color: silver;
+    text-align: center;
+
+}
+
+section {
+    background: silver;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+}
+
+footer {
+    color: rgba(192, 192, 192, 0.336);
+    text-align: center;
+    font-style: italic;
+}
+
+div {
+    text-align: center;
+    color: black;
+}
+
+#botao {
+
+    margin: 0 auto;
+    text-align: center;
+    background-color: darkgray;
+    color: black;
+}
+
+select {
+    background: silver;
+    width: 150px;
+    margin: 20px;
+
+}
+
+#finalizar {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: darkgray;
+    color: black;
+}

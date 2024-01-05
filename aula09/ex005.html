@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(3, 189, 252);
+            color: white;
+            font: normal, 20pt, Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div id="msg1">Clique aqui</div>
+
+
+
+    <div class="msg2">Clique aqui 2</div>
+    <div id="msg3">Clique aqui 3</div>
+    <script>
+        //VARIAVEIS
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] // eu consigo puxar pelo nome do elemento no caso aqui o 
+        var p2 = window.document.getElementsByTagName('p')[1]// paragrafo, e com [] eu pego qual paragrafo eu quiser
+       //PRINTAR OS PARAGRAFOS
+        document.write('O TEXTO 1: ' + p1.innerText + '</br>') // O innerText puxa somente o texto sem formatacoes
+        document.write('O TEXTO 2: ' + p2.innerHTML + '</br>') // O innerHTML puxa o html inteiro junto com todas formatacoes
+        //DIV 1
+        var d = window.document.getElementById('msg1') // eu consigo puxar pelo ID o elemento no caso aqui o id da div clique aqui
+        d.style.background = 'green'
+        //DIV 2
+        var c = window.document.querySelector('div.msg2') //Quando eu for pegar por class eu uso o . 
+        c.style.background = 'blue'
+        //DIV 3
+        var f = window.document.querySelector('div#msg3') //Quando eu for pegar por id eu uso o #
+        f.style.background = 'red'
+    </script>
+</body>
+</html>
